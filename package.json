@@ -1,0 +1,21 @@
+{
+  "name": "questronix3.0",
+  "version": "1.0.0",
+  "description": "upgrade draft of questronix website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://hakunozen@bitbucket.org/hakunozen/questronix3.0.git"
+  },
+  "author": "Saito",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/hakunozen/questronix3.0#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
