@@ -223,38 +223,92 @@ header {
   border-bottom: 4px solid rgba(255, 255, 255, 1);
 }
 /*about us*/
+.content-frame{
+  overflow: hidden;
+  cursor: pointer;
+}
 .history-bg{
     background: no-repeat url("../img/history.png");
     background-size: 100% 100%;
     width: 100%;
+    background-position: center;
+    overflow: hidden;
 }
 .awards-bg{
     background: no-repeat url("../img/awards.png");
     background-size: 100% 100%;
     width: 100%;
+    background-position: center;
+    overflow: hidden;
 }
 .certificates-bg{
     background: no-repeat url("../img/certifications.png");
     background-size: 100% 100%;
     width: 100%;
+    background-position: center;
+    overflow: hidden;
 }
 .mission-bg{
     background: no-repeat url("../img/mission.png");
     background-size: 100% 100%;
     width: 100%;
+    background-position: center;
+    overflow: hidden;
 }
 .animated-filter{
     background-color: rgba(0,0,0,0.4);
     position:absolute;
     height: 100%;
     width: 100%;
-    transition: 0.2ms ease;
+    transition: 0.2s ease-in;
+}
+.animated-filter h5{
+  color:snow;
+}
+.content-frame .animated-filter:hover h5{
+  color:#2b2b2b;
+}
+.content-frame .history-bg:hover .animated-filter{
+  transition: 0.2s ease-in-out;
+  margin-left:-100%;
+}
+.content-frame .history-bg:hover{
+  transition: 0.3s ease-in-out;
+  background-position: center;
+  background-size: 110% 110%; 
+}
+.content-frame .mission-bg:hover .animated-filter, h5{
+  transition: 0.2s ease-in-out;
+  margin-left:-100%;
+}
+.content-frame .mission-bg:hover{
+  transition: 0.3s ease-in-out;
+  background-position: center;
+  background-size: 110% 110%; 
+}
+.content-frame .certificates-bg:hover .animated-filter{
+  transition: 0.2s ease-in-out;
+  margin-left:-100%;
+}
+.content-frame .certificates-bg:hover{
+  transition: 0.3s ease-in-out;
+  background-position: center;
+  background-size: 110% 110%;  
+}
+.content-frame .awards-bg:hover .animated-filter{
+  transition: 0.2s ease-in-out;
+  margin-left:-100%;
+}
+.content-frame .awards-bg:hover{
+  transition: 0.3s ease-in-out;
+  background-position: center;
+  background-size: 110% 110%;  
 }
 
+/* 
 .animated-filter:hover{
-    margin-right: -100%;
-
-}
+    height: -100%;
+} */
 ul li.lists{
     list-style-type: disc !important;
 }
