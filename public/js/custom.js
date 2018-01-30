@@ -25,6 +25,7 @@ $(document).ready(function () {
     $(".button-collapse").sideNav();
     $('.parallax').parallax();
     $('.slider').slider();
+    $('.modal').modal();
 })
 $(document).ready(function () {
     $(window).on('scroll', function () {

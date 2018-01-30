@@ -1,4 +1,13 @@
 <%- include('./partials/header.html') %>
+      <div id="history" class="modal animated slideInRight">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="#!">one</a></li>
         <li><a href="#!">two</a></li>
@@ -54,7 +63,7 @@
             <source src="img/bg.mp4" type="video/mp4">
         </video>
     </div>
-    <h3 class="text-center" style="margin-bottom:3%;"> We make digital transformation possible </h3>
+    <h4 class="text-center" style="margin-bottom:3%;"> We make digital transformation possible </h4>
     <div class="col-md-12 row" style="height:50%; margin-bottom:0;">
         <div class="col-md-6 flex-center" style="text-align:justify;">
             <div class="col-md-8">
@@ -68,7 +77,7 @@
             </div>
         </div>
         <div class="col-md-6 row no-padding no-margin content-frame">
-            <div class="col-md-6 history-bg flex-center no-padding no-margin">
+            <div data-target="history" class="col-md-6 history-bg flex-center no-padding no-margin modal-trigger">
                 <h5>History</h5>
                 <div class="animated-filter flex-center">
                     <h5>History</h5>
@@ -94,12 +103,16 @@
             </div>
         </div>
     </div>
-    <div style="background-color:#efefef">
-        <div class="col-md-10 row">
-            <div class="col-md-6">
-                <h3 class="text-center">
-                    INNOVATIVE SOLUTIONS
-                </h3>
+
+    <ul class="collapsible col-md-12 row no-padding no-margin" data-collapsible="accordion" style="background-color:#eaeaea">
+        <li class="col-md-6" style="">
+            <div class="collapsible-header flex-center" style="border:none; background-color:#eaeaea;height:30%;">
+                <h4 class="text-center">
+                    <span class=" fa fa-lightbulb-o"></span>
+                    Innovative solutions
+                </h4>
+            </div>
+            <div class="collapsible-body">
                 <ul>
                     <li class="header-list">
                         Enables business innovation & realtime collaboration
@@ -114,8 +127,8 @@
                 <ul>
                     <li>
                         <b>
-                        <h5 class="no-padding no-margin">INFRASTRUCTURES</h5>
-                    </b>
+                    <h5 class="no-padding no-margin">INFRASTRUCTURES</h5>
+                </b>
                     </li>
                     <li class="lists">
                         item 1 here
@@ -130,8 +143,8 @@
                 <ul>
                     <li>
                         <b>
-                        <h5>INFRASTRUCTURES</h5>
-                    </b>
+                    <h5>INFRASTRUCTURES</h5>
+                </b>
                     </li>
                     <li class="lists">
                         item 1 here
@@ -146,8 +159,8 @@
                 <ul>
                     <li>
                         <b>
-                        <h5>INFRASTRUCTURES</h5>
-                    </b>
+                    <h5>INFRASTRUCTURES</h5>
+                </b>
                     </li>
                     <li class="lists">
                         item 1 here
@@ -160,10 +173,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-6">
-                <h3 class="text-center">
-                    RELIABLE SERVICES
-                </h3>
+        </li>
+        <li class="col-md-6">
+            <div class="collapsible-header flex-center" style="border:none;background-color:#eaeaea;height:30%;">
+                <h4 class="text-center">
+                        <span class=" fa fa-check-circle-o"></span>
+                    Reliable services
+                </h4>
+            </div>
+            <div class="collapsible-body">
                 <ul>
                     <li class="header-list">
                         Enables business innovation & realtime collaboration
@@ -180,8 +198,8 @@
                         <ul>
                             <li>
                                 <b>
-                        <h5 class="no-padding no-margin">INFRASTRUCTURES</h5>
-                    </b>
+                            <h5 class="no-padding no-margin">INFRASTRUCTURES</h5>
+                        </b>
                             </li>
                             <li class="lists">
                                 item 1 here
@@ -196,8 +214,8 @@
                         <ul>
                             <li>
                                 <b>
-                        <h5>INFRASTRUCTURES</h5>
-                    </b>
+                            <h5>INFRASTRUCTURES</h5>
+                        </b>
                             </li>
                             <li class="lists">
                                 item 1 here
@@ -212,8 +230,8 @@
                         <ul>
                             <li>
                                 <b>
-                        <h5>INFRASTRUCTURES</h5>
-                    </b>
+                            <h5>INFRASTRUCTURES</h5>
+                        </b>
                             </li>
                             <li class="lists">
                                 item 1 here
@@ -230,8 +248,8 @@
                         <ul>
                             <li>
                                 <b>
-                        <h5 class="no-padding no-margin">INFRASTRUCTURES</h5>
-                    </b>
+                            <h5 class="no-padding no-margin">INFRASTRUCTURES</h5>
+                        </b>
                             </li>
                             <li class="lists">
                                 item 1 here
@@ -246,8 +264,8 @@
                         <ul>
                             <li>
                                 <b>
-                        <h5>INFRASTRUCTURES</h5>
-                    </b>
+                            <h5>INFRASTRUCTURES</h5>
+                        </b>
                             </li>
                             <li class="lists">
                                 item 1 here
@@ -262,8 +280,8 @@
                         <ul>
                             <li>
                                 <b>
-                        <h5>INFRASTRUCTURES</h5>
-                    </b>
+                            <h5>INFRASTRUCTURES</h5>
+                        </b>
                             </li>
                             <li class="lists">
                                 item 1 here
@@ -276,10 +294,13 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        </li>
+    </ul>
+
+
+
+
+
     <div class="parallax-container" style="margin-top:-20px;">
         <div class="parallax"><img style="width:100%" src="img/customers.jpg">
         </div>
