@@ -16,12 +16,18 @@
 // });
 $(window).scroll(function () {
     var lSCroll = $(this).scrollTop();
-
     $('.qnx-logo').css({
         'transform': 'translate(0px, ' + lSCroll / 20 + '%)'
     })
+    if (lSCroll > $('#cards').offset().top){
+        $('.partner-bg').addClass('show-bg');
+    }
+    if (lSCroll > $('.qnx-logo').offset().top){
+        $('.about').addClass('show-about');
+    }
 })
 $(document).ready(function () {
+    $('ul.tabs').tabs();
     $(".button-collapse").sideNav();
     $('.parallax').parallax();
     $('.slider').slider();
@@ -36,3 +42,19 @@ $(document).ready(function () {
         }
     });
 });
+$('#history-open').on('click',modalOpen);
+$('#history-close').on('click',modalClose);
+function modalOpen(){
+    $("#history").removeClass('slideOutLeft');
+    $('#history').addClass('slideInRight').modal('open');
+}
+function modalClose(){
+    $("#history").removeClass('slideInRight');
+    $('#history').addClass('slideOutLeft').modal('close');
+}
+var options = [
+      {selector: '#mission', offset: 50, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      }}
+    ];
+    Materialize.scrollFire(options);

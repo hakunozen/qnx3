@@ -1,13 +1,14 @@
 <%- include('./partials/header.html') %>
-      <div id="history" class="modal animated slideInRight">
+    <div id="history" class="modal animated" style="animation-duration:500ms">
         <div class="modal-content">
-          <h4>Modal Header</h4>
-          <p>A bunch of text</p>
+            <span id="history-close" class="fa fa-close modal-action modal-close" style="position:absolute; right:0; top:0; padding:2%;"></span>
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
         </div>
         <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
         </div>
-      </div>
+    </div>
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="#!">one</a></li>
         <li><a href="#!">two</a></li>
@@ -15,7 +16,7 @@
         <li><a href="#!">three</a></li>
     </ul>
     <header>
-        <div class="navbar">
+        <div class="navbar" style="position:fixed;">
             <div class="logo">
                 <img src="#">
             </div>
@@ -51,7 +52,7 @@
 
         </div>
     </header>
-    <div id="banners" class="parallax-container" style="margin-top:-10%; height:110%;">
+    <div id="banners" class="parallax-container" style=" height:100%;">
         <div class="flex-center pattern-bg" style="z-index:100;flex-direction:column; cursor:pointer">
             <div class="click-me flex-center qnx-logo" style="flex-direction:column;">
                 <img class="flex-center tooltipped animated fadeInUp" data-position="right" data-delay="50" data-tooltip="Know more about Questronix!"
@@ -63,53 +64,81 @@
             <source src="img/bg.mp4" type="video/mp4">
         </video>
     </div>
-    <h4 class="text-center" style="margin-bottom:3%;"> We make digital transformation possible </h4>
-    <div class="col-md-12 row" style="height:50%; margin-bottom:0;">
-        <div class="col-md-6 flex-center" style="text-align:justify;">
-            <div class="col-md-8">
-                <hr/>
-                <h5>
-                    Your trusted business partner for IT solutions and services.Questronix has grown to be one of the largest IT solution provider
-                    and systems integrator in the Philippines since 1987 that has earned award and certificates through its
-                    focused professional team of experts.
-                </h5>
-                <hr/>
+    <div style="background-color:#515151; padding:2% 0% 2% 0%;">
+        <h5 class="text-center text-white" style="margin:0% 0% 2.5% 0%"> We make digital transformation possible </h5>
+        <div class="col-md-12 row no-padding" style="height:50%; margin-bottom:0;">
+            <div class="col-md-6 flex-center" style="text-align:justify;">
+                <div class="about col-md-8">
+                    <hr style="border-color:white" />
+                    <p class="text-white">
+                        Your trusted business partner for IT solutions and services. Questronix has grown to be one of the largest IT solution provider
+                        and systems integrator in the Philippines since 1987 that has earned award and certificates through
+                        its focused professional team of experts.
+                    </p>
+                    <hr style="border-color:white" />
+                </div>
             </div>
-        </div>
-        <div class="col-md-6 row no-padding no-margin content-frame">
-            <div data-target="history" class="col-md-6 history-bg flex-center no-padding no-margin modal-trigger">
-                <h5>History</h5>
-                <div class="animated-filter flex-center">
+            <div class="col-md-6 row no-padding no-margin content-frame">
+                <div data-target="history" id="history-open" class="col-md-6 history-bg flex-center no-padding no-margin modal-trigger">
                     <h5>History</h5>
+                    <div class="animated-filter flex-center">
+                        <h5>History</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 certificates-bg flex-center no-padding no-margin">
-                <h5>Certifications</h5>
-                <div class="animated-filter flex-center">
+                <div class="col-md-6 certificates-bg flex-center no-padding no-margin">
                     <h5>Certifications</h5>
+                    <div class="animated-filter flex-center">
+                        <h5>Certifications</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 mission-bg flex-center no-padding no-margin">
-                <h5>Mission</h5>
-                <div class="animated-filter flex-center">
-                    <h5>Mission</h5>
+                <div class="col-md-6 leaders-bg flex-center no-padding no-margin">
+                    <h5>Leaders</h5>
+                    <div class="animated-filter flex-center">
+                        <h5>Leaders</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 awards-bg flex-center no-padding no-margin">
-                <h5>Award</h5>
-                <div class="animated-filter flex-center">
+                <div class="col-md-6 awards-bg flex-center no-padding no-margin">
                     <h5>Award</h5>
+                    <div class="animated-filter flex-center">
+                        <h5>Award</h5>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <ul class="collapsible col-md-12 row no-padding no-margin" data-collapsible="accordion" style="background-color:#eaeaea">
+    <div id="cards" class="col-md-12 row" style="margin-top:5%;">
+        <div class=" col-md-4 row">
+            <div class="col s12 m6 l6">
+                <div class="card blue-grey darken-1 flex-center">
+                    <div class="card-content white-text">
+                        <h5 class="text-center text-white">
+                            <span class=" fa fa-lightbulb-o"></span> Innovative solutions
+                        </h5>
+                        <p>one sentence on what is a reliable services here, prefferably as much as this long.</p>
+                    </div>
+                    <h4 class="text-white text-center"><span class="fa fa-chevron-circle-right"></span></h4>
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-4 row">
+            <div class="col s12 m6 l6">
+                <div class="card blue-grey darken-1 flex-center">
+                    <div class="card-content white-text">
+                        <h5 class="text-center text-white">
+                            <span class=" fa fa-check-circle-o"></span> Reliable services
+                        </h5>
+                        <p>one sentence on what is a reliable services here, prefferably as much as this long.</p>
+                    </div>
+                    <h4 class="text-white text-center"><span class="fa fa-chevron-circle-right"></span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<ul class="collapsible col-md-12 row no-padding no-margin" data-collapsible="accordion" style="background-color:#eaeaea">
         <li class="col-md-6" style="">
             <div class="collapsible-header flex-center" style="border:none; background-color:#eaeaea;height:30%;">
                 <h4 class="text-center">
-                    <span class=" fa fa-lightbulb-o"></span>
-                    Innovative solutions
+                    <span class=" fa fa-lightbulb-o"></span> Innovative solutions
                 </h4>
             </div>
             <div class="collapsible-body">
@@ -177,8 +206,7 @@
         <li class="col-md-6">
             <div class="collapsible-header flex-center" style="border:none;background-color:#eaeaea;height:30%;">
                 <h4 class="text-center">
-                        <span class=" fa fa-check-circle-o"></span>
-                    Reliable services
+                    <span class=" fa fa-check-circle-o"></span> Reliable services
                 </h4>
             </div>
             <div class="collapsible-body">
@@ -295,53 +323,283 @@
                         </ul>
                     </div>
         </li>
-    </ul>
+    </ul>-->
+    <div class="col-md-12 row no-padding no-margin">
+        <div class="col-md-4 no-padding no-margin">
+            <img style="width:100%;" src="img/man.png">
+        </div>
+        <div id="mission" class="col-md-6">
+            <h5 class="text-center">
+                Mission
+            </h5>
+            <hr/>
+            <p class="text-justify">
+                The company's incorporators being authorities in the fields of Information Technology, Management Services, Customer Support,
+                Marketing, and Human Resources, share a common passion of providing the best products and professional service
+                possible.
+            </p>
+            <hr/>
+        </div>
+    </div>
 
 
-
+    <div class="col-md-12 no-margin partner-bg " style="padding:2% 0% 2% 0%">
+        <h5 class="text-center no-padding no-margin">Our partners</h5>
+        <div>
+            <div class="flex-center col-md-12 col-sm-12 col-xs-6 col-lg-12" style="padding:2% 0% 2% 0%">
+                <div class="col-md-2 flex-center">
+                    <img class="img-filter" src="img/ibmplatinum.png" style="width:75%">
+                </div>
+                <div class="col-md-2 flex-center">
+                    <img class="img-filter" src="img/barracuda.png" style=" width:100%">
+                </div>
+                <div class="col-md-2 flex-center">
+                    <img class="img-filter" src="img/nexus.png" style="width:75%">
+                </div>
+                <div class="col-md-2 flex-center">
+                    <img class="img-filter" src="img/oraclegold.png" style="width:100%">
+                </div>
+                <div class="col-md-2 flex-center">
+                    <img class="img-filter" src="img/sappartner.png" style="width:75%">
+                </div>
+                <div class="col-md-2 flex-center">
+                    <img class="img-filter" src="img/paloaltonetworks.png" style="width:100%">
+                </div>
+            </div>
+            <div class="flex-center col-md-12 col-sm-12 col-xs-6 col-lg-12" style="padding:2% 0% 2% 0%">
+                <div class="col-md-2 flex-center">
+                    <img class="img-filter" src="img/emerson.jpg" style="width:55%">
+                </div>
+                <div class="col-md-2 flex-center">
+                    <img class="img-filter" src="img/lenovodiamond.png" style="width:75%">
+                </div>
+                <div class="col-md-2 flex-center">
+                    <img class="img-filter" src="img/f52.png" style="width:50%">
+                </div>
+                <div class="col-md-2 flex-center">
+                    <img class="img-filter" src="img/visionsolution.png" style="width:75%">
+                </div>
+                <div class="col-md-2 flex-center">
+                    <img class="img-filter" src="img/ciscocertified.png" style="width:50%">
+                </div>
+                <div class="col-md-2 flex-center">
+                    <img class="img-filter" src="img/vmware.png" style="width:75%">
+                </div>
+            </div>
+            <div class="flex-center col-md-12 col-sm-12 col-xs-6 col-lg-12" style="padding:2% 0% 2% 0%">
+                <div class="col-md-2 col-lg-2 col-sm-6 col-xs-4 flex-center margin-s">
+                    <img class="img-filter" src="img/microsoft.png" style="width: 75%;">
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-6 col-xs-4 flex-center margin-s">
+                    <img class="img-filter" src="img/redhat.png" style="width: 75%;">
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-6 col-xs-4 flex-center margin-s">
+                    <img class="img-filter" src="img/veritas.png" style="width: 75%;">
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-6 col-xs-4 flex-center margin-s">
+                    <img class="img-filter" src="img/symantec.png" style="width: 75%">
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-6 col-xs-4 flex-center margin-s">
+                    <img class="img-filter" src="img/enforcive.png" style="width: 75%;">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="parallax-container" style="margin-top:-20px;">
         <div class="parallax"><img style="width:100%" src="img/customers.jpg">
         </div>
-        <h3 class="flex-center" style="height:100%;"> Same partners section as before</h3>
+        <h3 class="flex-center" style="height:100%;"> Clients here</h3>
     </div>
-    <div class="slider">
-        <ul class="slides">
-            <li>
-                <img src="https://lorempixel.com/580/250/nature/1">
-                <!-- random image -->
-                <div class="caption center-align">
-                    <h3>same clients</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+    <div class="col-md-12">
+        <h5 class="text-center">
+            Feedback
+        </h5>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card ">
+                    <div class="card-image">
+                        <img src="img/emerson.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Jane Doe - Secretary</span>
+                        <p>Thank you so much for producing such a wonderful software product! After extensive research of other
+                            database solutions large and small, we selected Questronix because it looked both powerful and
+                            fast response time."</p>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <img src="https://lorempixel.com/580/250/nature/2">
-                <!-- random image -->
-                <div class="caption left-align">
-                    <h3>same clients</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <div class="card-image">
+                        <img src="img/ibmplatinum.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Jane Doe - Manager</span>
+                        <p>You exceeded our expectations tenfold. With the reporting and contact management capabilities Questronix
+                            has given our organization, we can strategize better and focus our fundraising where it can be
+                            most successful with half the effort we were putting into our old database system."</p>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <img src="https://lorempixel.com/580/250/nature/3">
-                <!-- random image -->
-                <div class="caption right-align">
-                    <h3>same clients</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <div class="card-image">
+                        <img src="img/paloaltonetworks.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Jane Doe - Secretary</span>
+                        <p>Thank you so much for producing such a wonderful software product! After extensive research of other
+                            database solutions large and small, we selected Questronix because it looked both powerful and
+                            fast response time."</p>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <img src="https://lorempixel.com/580/250/nature/4">
-                <!-- random image -->
-                <div class="caption center-align">
-                    <h3>This is our big Tagline!</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <div class="card-image">
+                        <img src="img/oraclegold.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Jane Doe - Secretary</span>
+                        <p>Thank you so much for producing such a wonderful software product! After extensive research of other
+                            database solutions large and small, we selected Questronix because it looked both powerful and
+                            fast response time."</p>
+                    </div>
                 </div>
-            </li>
-        </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <div class="card-image">
+                        <img src="img/oraclegold.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Jane Doe - Secretary</span>
+                        <p>Thank you so much for producing such a wonderful software product! After extensive research of other
+                            database solutions large and small, we selected Questronix because it looked both powerful and
+                            fast response time."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <div class="card-image">
+                        <img src="img/ibmplatinum.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Jane Doe - Secretary</span>
+                        <p>Thank you so much for producing such a wonderful software product! After extensive research of other
+                            database solutions large and small, we selected Questronix because it looked both powerful and
+                            fast response time."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <footer class="footer">
+        <div class="col-md-12 row no-margin footer-filter" style="padding:0% 5% 0% 5%">
+            <div class="col-md-4 text-white">
+                <h5 class="text-white">Carrers and oppotunities</h5>
+                <ul>
+                    <li>Account Manager</li>
+                    <li>Software Developer</li>
+                    <li>Security Solutions Specialist</li>
+                    <li>Incident Response Analyst I</li>
+                    <li>Human Resources</li>
+                    <li>Accounting</li>
+                    <li>Project Manager</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-white">Contact Details:</h5>
+                <p class="text-white">
+
+                    <i class="fa fa-building-o"></i> Questronix Corporate Center<br />
+                    <i class="fa fa-map-marker"></i> 178 Yakal St. San Antonio Village, Makati City, 1203, Philippines<br
+                    />
+                    <i class="fa fa-phone"></i> TrunkLine: (+632) 822-7700<br />
+                    <i class="fa fa-phone-square"></i> QSERV HOTLINE: (+632) 822-0922<br />
+                    <i class="fa fa-envelope-o"></i> Email: marketing@questronix.com.ph<br />
+                    <i class="fa fa-clock-o"></i> Office Hours: Monday - Friday: 8:30 AM to 5:30 PM<br />
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-tabs">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab"><a href="#feedback" style="color:#2b2b2b">Feedback</a></li>
+                            <li class="tab"><a href="#join" style="color:#2b2b2b">Join us!</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-content grey lighten-4">
+                        <div id="feedback">
+                            <div class="row no-padding no-margin">
+                                <form class="col-md-12">
+                                    <div class="row no-padding no-margin">
+                                        <div class="input-field col-md-12 no-padding no-margin">
+                                            <input placeholder="Name" id="first_name" type="text" class="validate">
+                                            <label for="first_name">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row no-padding no-margin">
+                                        <div class="input-field col-md-12 no-padding no-margin">
+                                            <input id="email" placeholder="Email" type="email" class="validate">
+                                            <label for="email">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="row no-padding no-margin">
+                                        <div class="input-field col-md-12 no-padding no-margin">
+                                            <input id="company" placeholder="Company" type="text" class="validate">
+                                            <label for="company">Company</label>
+                                        </div>
+                                    </div>
+                                    <div class="row no-padding no-margin">
+                                        <div class="input-field col-md-12 no-padding no-margin">
+                                            <input id="position" placeholder="Position" type="text">
+                                            <label for="position">Position</label>
+                                        </div>
+                                    </div>
+                                    <div class="row no-padding no-margin">
+                                        <div class="input-field col-md-12 no-padding no-margin">
+                                            <textarea id="message" class="materialize-textarea"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="btn waves-effect waves-light pull-right"> Send </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="join">
+                            <div class="row no-padding no-margin">
+                                <form class="col-md-12">
+                                    <div class="row no-padding no-margin">
+                                        <div class="input-field col-md-12 no-padding no-margin">
+                                            <input placeholder="Name" id="first_name" type="text" class="validate">
+                                            <label for="first_name">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row no-padding no-margin">
+                                        <div class="input-field col-md-12 no-padding no-margin">
+                                            <input id="email" placeholder="Email" type="email" class="validate">
+                                            <label for="email">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="row no-padding no-margin">
+                                        <div class="input-field col-md-12 no-padding no-margin">
+                                            <textarea id="message" class="materialize-textarea"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="btn waves-effect waves-light pull-right"> Send </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    </footer>
 
 
 
