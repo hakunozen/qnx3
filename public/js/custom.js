@@ -19,10 +19,10 @@ $(window).scroll(function () {
     $('.qnx-logo').css({
         'transform': 'translate(0px, ' + lSCroll / 20 + '%)'
     })
-    if (lSCroll > $('#cards').offset().top){
+    if (lSCroll > $('#mission').offset().top) {
         $('.partner-bg').addClass('show-bg');
     }
-    if (lSCroll > $('.qnx-logo').offset().top){
+    if (lSCroll > $('.qnx-logo').offset().top) {
         $('.about').addClass('show-about');
     }
 })
@@ -31,6 +31,7 @@ $(document).ready(function () {
     $(".button-collapse").sideNav();
     $('.parallax').parallax();
     $('.slider').slider();
+    $('.carousel').carousel({duration:50})
     $('.modal').modal();
 })
 $(document).ready(function () {
@@ -42,19 +43,34 @@ $(document).ready(function () {
         }
     });
 });
-$('#history-open').on('click',modalOpen);
-$('#history-close').on('click',modalClose);
-function modalOpen(){
+$('#history-open').on('click', modalOpen);
+$('#history-close').on('click', modalClose);
+function modalOpen() {
     $("#history").removeClass('slideOutLeft');
     $('#history').addClass('slideInRight').modal('open');
 }
-function modalClose(){
+function modalClose() {
     $("#history").removeClass('slideInRight');
     $('#history').addClass('slideOutLeft').modal('close');
 }
 var options = [
-      {selector: '#mission', offset: 50, callback: function(el) {
-        Materialize.fadeInImage($(el));
-      }}
-    ];
-    Materialize.scrollFire(options);
+    {
+        selector: '#mission', offset: 50, callback: function (el) {
+            Materialize.fadeInImage($(el));
+        }
+    }
+];
+Materialize.scrollFire(options);
+// move next carousel
+$('.moveNextCarousel').click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $('.carousel').carousel('next');
+});
+
+// move prev carousel
+$('.movePrevCarousel').click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $('.carousel').carousel('prev');
+});
