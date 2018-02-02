@@ -59,13 +59,13 @@ $(document).ready(function () {
 //     $('#history').addClass('slideOutUp').modal('close');
 // };
 
-var options = [
-    {
-        selector: '#mission', offset: 50, callback: function (el) {
-            Materialize.fadeInImage($(el));
-        }
-    }
-];
+// var options = [
+//     {
+//         selector: '#2017', offset: 50, callback: function (el) {
+//             Materialize.fadeInImage($(el));
+//         }
+//     }
+// ];
 Materialize.scrollFire(options);
 // move next carousel
 $('.moveNextCarousel').click(function (e) {
