@@ -21,13 +21,20 @@ var sScroll = new SmoothScroll('a[href*="#"]',{
 $(window).scroll(function () {
     var lSCroll = $(this).scrollTop();
     $('.qnx-logo').css({
-        'transform': 'translate(0px, ' + lSCroll / 20 + '%)'
+        'transform': 'translate(0px, ' + lSCroll / 3 + '%)'
     })
     if (lSCroll > $('#mission').offset().top) {
         $('.partner-bg').addClass('show-bg');
     }
     if (lSCroll > $('.qnx-logo').offset().top) {
         $('.about').addClass('show-about');
+    }
+})
+$('.modal').scroll(function(){
+    var mScroll = $('.modal').offset().top;
+    if (mScroll > $('#history-close').offset().top) {
+        $('.y2017').addClass('show-left');
+        // console.log('history close');
     }
 })
 $(document).ready(function () {
