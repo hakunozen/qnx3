@@ -14,14 +14,14 @@
 //         })
 //     }
 // });
-var sScroll = new SmoothScroll('a[href*="#"]',{
+var sScroll = new SmoothScroll('a[href*="#"]', {
     offset: 50,
 });
 
 $(window).scroll(function () {
     var lSCroll = $(this).scrollTop();
     $('.qnx-logo').css({
-        'transform': 'translate(0px, ' + lSCroll / 3 + '%)'
+        'transform': 'translate(0px, ' + lSCroll / 5 + '%)'
     })
     if (lSCroll > $('#mission').offset().top) {
         $('.partner-bg').addClass('show-bg');
@@ -30,11 +30,19 @@ $(window).scroll(function () {
         $('.about').addClass('show-about');
     }
 })
-$('.modal').scroll(function(){
-    var mScroll = $('.modal').offset().top;
+$('.modal').scroll(function () {
+    var mScroll = $(this).offset().top;
+    var aScroll = $(this).scrollTop;
     if (mScroll > $('#history-close').offset().top) {
         $('.y2017').addClass('show-left');
-        // console.log('history close');
+    }
+    $('.corporate').css({
+        'transform':'translate(0px, ' + mScroll / 2 + '%)',
+        'transition':'0.3s'
+    })
+    console.log(mScroll);
+    if( mScroll > $('.corporate').offset().top){
+        console.log('hi')
     }
 })
 $(document).ready(function () {
@@ -47,7 +55,7 @@ $(document).ready(function () {
 })
 $(document).ready(function () {
     $(window).on('scroll', function () {
-        if (Math.round($(window).scrollTop()) > 100) {
+        if (Math.round($(window).scrollTop()) > 500) {
             $('.navbar').addClass('scrolled');
         } else {
             $('.navbar').removeClass('scrolled');

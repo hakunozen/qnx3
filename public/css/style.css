@@ -636,3 +636,6 @@ a.catalog:hover{
   opacity: 1;
   margin-left:0;
 }
+.animated{
+  animation-duration: 600ms !important;
+}
