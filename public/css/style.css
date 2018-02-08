@@ -629,7 +629,16 @@ a.catalog:hover{
 }
 .y2017{
   opacity: 0;
-  margin-left: -5%;
+  
+}
+.y2007{
+ opacity: 0;
+}
+.y1997{
+  opacity: 0
+}
+.y1987{
+  opacity: 0;
 }
 .show-left{
   transition: 0.3s ease-in-out;
@@ -638,4 +647,12 @@ a.catalog:hover{
 }
 .animated{
   animation-duration: 600ms !important;
+}
+.corporate{
+  background: url("../img/corporate.jpg");
+    position: relative;
+    min-height:65%;
+    background-size: 100% auto;
+    background-position:top center;
+    overflow: hidden
 }

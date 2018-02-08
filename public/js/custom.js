@@ -31,19 +31,25 @@ $(window).scroll(function () {
     }
 })
 $('.modal').scroll(function () {
-    var mScroll = $(this).offset().top;
-    var aScroll = $(this).scrollTop;
-    if (mScroll > $('#history-close').offset().top) {
-        $('.y2017').addClass('show-left');
+    var aScroll = $(this).offset().top;
+    var mScroll = $(this).scrollTop();
+    if (aScroll > $('.scroll-down').offset().top) {
+        $('.y2017').addClass('fadeInLeft')
     }
-    $('.corporate').css({
-        'transform':'translate(0px, ' + mScroll / 2 + '%)',
-        'transition':'0.3s'
-    })
-    console.log(mScroll);
-    if( mScroll > $('.corporate').offset().top){
-        console.log('hi')
+    if (aScroll > $('.y2017').offset().top) {
+        $('.y2007').addClass('fadeInRight')
     }
+    if (aScroll > $('.y2007').offset().top) {
+        $('.y1997').addClass('fadeInLeft')
+    }
+    if (aScroll > $('.y1997').offset().top) {
+        $('.y1987').addClass('fadeInRight')
+    }
+    //parallax effect in modal
+    // $('.corporate').css({
+    //     'transform':'translate(0px, ' + mScroll / 2 + '%)',
+    //     'opacity': mScroll / 200
+    // })
 })
 $(document).ready(function () {
     $('ul.tabs').tabs();
@@ -62,7 +68,6 @@ $(document).ready(function () {
         }
     });
 });
-
 // $('#history-open').on('click', modalOpen);
 // $('#history-close').on('click', modalClose);
 // function modalOpen() {
