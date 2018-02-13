@@ -330,6 +330,10 @@ ul li.lists{
 ul li.header-list{
     list-style-type: circle !important;
 }
+ul.sol-serv li {
+  list-style-type: circle !important;
+  margin:13% 5% 13% 5%;
+}
 .slider .indicators{
     margin-top:-20px !important;
 }
@@ -337,19 +341,19 @@ ul li.header-list{
  *  STYLE 2
  */
 
-#style-2::-webkit-scrollbar-track
+.custom-scroll::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
 	background-color:rgba(0, 0, 0, 0);
 }
 
-#style-2::-webkit-scrollbar
+.custom-scroll::-webkit-scrollbar
 {
 	width: 7px;
 	background-color: rgba(0, 0, 0, 0);
 }
 
-#style-2::-webkit-scrollbar-thumb
+.custom-scroll::-webkit-scrollbar-thumb
 {
 	
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
@@ -619,12 +623,13 @@ ul li.header-list{
         }
 }
 a.catalog{
-  text-decoration: none;
+  text-decoration: underline;
 }
 a.catalog:hover{
   transition: 0.1s ease-in-out;
   border:3px solid white;
   padding:2%;
+  text-decoration: none;
 
 }
 .y2017{
@@ -656,3 +661,7 @@ a.catalog:hover{
     background-position:top center;
     overflow: hidden
 }
+/*#cards .modal-trigger:hover .innovation{
+  transition: 0.3s;
+  transform: translate(100px, 0%);
+}*/

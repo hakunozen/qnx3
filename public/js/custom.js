@@ -67,6 +67,12 @@ $(document).ready(function () {
             $('.navbar').removeClass('scrolled');
         }
     });
+    $('#cards .solution').mouseover(function(){
+        $('.innovation').addClass('wobble');
+    })
+    $('#cards .solution').mouseout(function(){
+        $('.innovation').removeClass('wobble');
+    })
 });
 // $('#history-open').on('click', modalOpen);
 // $('#history-close').on('click', modalClose);
