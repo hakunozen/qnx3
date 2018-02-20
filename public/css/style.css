@@ -622,16 +622,7 @@ ul.sol-serv li {
             right: auto;
         }
 }
-a.catalog{
-  text-decoration: underline;
-}
-a.catalog:hover{
-  transition: 0.1s ease-in-out;
-  border:3px solid white;
-  padding:2%;
-  text-decoration: none;
 
-}
 .y2017{
   opacity: 0;
   

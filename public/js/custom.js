@@ -73,6 +73,12 @@ $(document).ready(function () {
     $('#cards .solution').mouseout(function(){
         $('.innovation').removeClass('wobble');
     })
+    $('#cards .service').mouseover(function(){
+        $('.reliable').addClass('wobble');
+    })
+    $('#cards .service').mouseout(function(){
+        $('.reliable').removeClass('wobble');
+    })
 });
 // $('#history-open').on('click', modalOpen);
 // $('#history-close').on('click', modalClose);
