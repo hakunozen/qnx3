@@ -34,7 +34,8 @@ $('.modal').scroll(function () {
     var aScroll = $(this).offset().top;
     var bScroll = $(this).offset().top;
     var mScroll = $(this).scrollTop();
-    var test = $('.award-list1.last').scrollTop().top;
+    var test = $('.award2').offset().top;
+    var testing = mScroll - test;
     if (aScroll > $('.scroll-down').offset().top) {
         $('.y2017').addClass('fadeInLeft')
     }
@@ -58,10 +59,11 @@ $('.modal').scroll(function () {
     }
     if (bScroll > $('.award-list1.last').offset().top) {
         // $('.moving-text2').addClass('fadeInUp');
-            $('.moving-text2').css({
-                'transform': 'translate(0px, ' + test + 'px)'
-            });
-        
+        $('.moving-text2').css({
+            'transform': 'translate(0px, ' + testing / 2 + 'px)'
+        });
+        $('.moving-text2').addClass('fadeIn');
+        // $('.moving-text1').addClass('fadeOut');
         console.log('hi')
         // $('.moving-text1').addClass('fadeOut');
     }
@@ -69,36 +71,10 @@ $('.modal').scroll(function () {
         'transform': 'translate(0px, ' + mScroll + 'px)'
     });
 
-    // $('.moving-text2').css({
-    //     'transform': 'translate(0px, ' + mScroll  + 'px)'
-    // })
-    // if (bScroll = $('.modal-content').offset().top){
-    //     $('.award-list1').removeClass('fadeInRight');
-    //     $('.award-list2').removeClass('fadeInRight');
-    //     $('.award-list3').removeClass('fadeInRight');
-    //     console.log('itlog');
-    // }
-
-    // var options = [
-    // {selector: '#award2', offset:200, callback: function(){
-    //     $('#award2').addClass('fadeInRight')
-    // }}];
-    // $('#award2 ul.anime-list li:nth-child()').css('background-color', 'yellow');
-
-    // var animeList = $('#award2 ul.anime-list li.award-list2').length;
-    // console.log(animeList);
-    // for(n = 0; n < animeList; ++n){
-    //     $('.award-list2').addClass('fadeInRight').css({
-    //         'animation-delay':n + 's'
-    //     })
-    // }
-    // Materialize.scrollFire(options);
-    //parallax effect in modal
-    // $('.corporate').css({
-    //     'transform':'translate(0px, ' + mScroll / 2 + '%)',
-    //     'opacity': mScroll / 200
-    // })
 })
+// if (modalClose =  true) {
+//     $('moving-text1').removeClass('fadeOut');
+// }
 
 $(document).ready(function () {
     $('ul.tabs').tabs();
