@@ -34,6 +34,7 @@ $('.modal').scroll(function () {
     var aScroll = $(this).offset().top;
     var bScroll = $(this).offset().top;
     var mScroll = $(this).scrollTop();
+    var test = $('.award-list1.last').scrollTop().top;
     if (aScroll > $('.scroll-down').offset().top) {
         $('.y2017').addClass('fadeInLeft')
     }
@@ -55,9 +56,22 @@ $('.modal').scroll(function () {
     if (bScroll > $('.award-list2.last').offset().top) {
         $('.award-list3').addClass('fadeInRight')
     }
-    $('.moving-text').css({
-        'transform': 'translate(0px, ' + mScroll*4  + '%)'
-    })
+    if (bScroll > $('.award-list1.last').offset().top) {
+        // $('.moving-text2').addClass('fadeInUp');
+            $('.moving-text2').css({
+                'transform': 'translate(0px, ' + test + 'px)'
+            });
+        
+        console.log('hi')
+        // $('.moving-text1').addClass('fadeOut');
+    }
+    $('.moving-text1').css({
+        'transform': 'translate(0px, ' + mScroll + 'px)'
+    });
+
+    // $('.moving-text2').css({
+    //     'transform': 'translate(0px, ' + mScroll  + 'px)'
+    // })
     // if (bScroll = $('.modal-content').offset().top){
     //     $('.award-list1').removeClass('fadeInRight');
     //     $('.award-list2').removeClass('fadeInRight');
