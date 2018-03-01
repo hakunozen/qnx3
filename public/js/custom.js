@@ -57,19 +57,20 @@ $('.modal').scroll(function () {
     if (bScroll > $('.award-list2.last').offset().top) {
         $('.award-list3').addClass('fadeInRight')
     }
-    if (bScroll > $('.award-list1.last').offset().top) {
-        // $('.moving-text2').addClass('fadeInUp');
-        $('.moving-text2').css({
-            'transform': 'translate(0px, ' + testing / 2 + 'px)'
-        });
-        $('.moving-text2').addClass('fadeIn');
-        // $('.moving-text1').addClass('fadeOut');
-        console.log('hi')
-        // $('.moving-text1').addClass('fadeOut');
-    }
-    $('.moving-text1').css({
-        'transform': 'translate(0px, ' + mScroll + 'px)'
-    });
+    // if (bScroll > $('.award-list1.last').offset().top) {
+    //     // $('.moving-text2').addClass('fadeInUp');
+    //     $('.moving-text2').css({
+    //         'transform': 'translate(0px, ' + testing / 2 + 'px)'
+    //     });
+    //     $('.moving-text2').addClass('fadeIn');
+    //     // $('.moving-text1').addClass('fadeOut');
+    //     console.log('hi')
+    //     // $('.moving-text1').addClass('fadeOut');
+    // }
+    // $('.moving-text1').css({
+    //     'transform': 'translate(0px, ' + mScroll + 'px)'
+    // });
+
 
 })
 // if (modalClose =  true) {

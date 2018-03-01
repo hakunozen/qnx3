@@ -163,7 +163,7 @@ header {
   float: left;
   display: inline-block;
   margin-top: 5px;
-  margin-left: -10%;
+  margin-left: -100%;
   width: 70px;
   height: 70px;
   background-image: url("../img/qnxlogo.svg");
@@ -276,11 +276,14 @@ header {
   color:snow;
 }
 .content-frame .animated-filter:hover h5{
-  color:#2b2b2b;
+  border-top: solid 1px #ffffff;
+  border-bottom: solid 1px #ffffff;
+  padding:3%;
+  transition: 0.2s
 }
 .content-frame .history-bg:hover .animated-filter{
   transition: 0.2s ease-in-out;
-  margin-left:-100%;
+  
 }
 .content-frame .history-bg:hover{
   transition: 0.3s ease-in-out;
@@ -289,7 +292,7 @@ header {
 }
 .content-frame .leaders-bg:hover .animated-filter, h5{
   transition: 0.2s ease-in-out;
-  margin-left:-100%;
+  
 }
 .content-frame .leaders-bg:hover{
   transition: 0.3s ease-in-out;
@@ -298,7 +301,7 @@ header {
 }
 .content-frame .certificates-bg:hover .animated-filter{
   transition: 0.2s ease-in-out;
-  margin-left:-100%;
+  
 }
 .content-frame .certificates-bg:hover{
   transition: 0.3s ease-in-out;
@@ -307,7 +310,7 @@ header {
 }
 .content-frame .awards-bg:hover .animated-filter{
   transition: 0.2s ease-in-out;
-  margin-left:-100%;
+  
 }
 .content-frame .awards-bg:hover{
   transition: 0.3s ease-in-out;
@@ -404,7 +407,7 @@ ul.sol-serv li {
     -webkit-transform: translate(1100%,0);
   }
   100%{
-    -webkit-transform: translate(-4900%,0);
+    -webkit-transform: translate(-4000%,0);
   }
 }
 @-moz-keyframes scroll{
@@ -412,7 +415,7 @@ ul.sol-serv li {
     -webkit-transform: translate(1100%,0);
   }
   100%{
-    -webkit-transform: translate(-4900%,0);
+    -webkit-transform: translate(-4000%,0);
   }
 }
 .marquee{
@@ -424,9 +427,9 @@ ul.sol-serv li {
 }
 .marquee .marquee-item{
   display: inline-block;
-  -webkit-animation: scroll 60s infinite linear;
-  animation: scroll 60s infinite linear;
-  -moz-animation: scroll 60s infinite linear;
+  -webkit-animation: scroll 30s infinite linear;
+  animation: scroll 40s infinite linear;
+  -moz-animation: scroll 30s infinite linear;
   margin-left: 5%;
 }
 .card.small .card-image, .card.medium .card-image, .card.large .card-image{
@@ -770,3 +773,24 @@ ul li.award-list2 , ul li.award-list1 , ul li.award-list3{
 /*.moving-text2{
   opacity: 0
 }*/
+
+.award1-bg{
+    position: relative;
+    height:auto;
+    background-image: url("../img/award.jpg");
+    background-size: auto;
+    background-position:right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden
+}
+.award2-bg{
+    position: relative;
+    height:auto;
+    background-image: url("../img/award2.png");
+    background-size: contain;
+    background-position:right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden
+}
