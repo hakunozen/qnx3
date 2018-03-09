@@ -28,8 +28,7 @@
     background-repeat: no-repeat;
     position: absolute;
     top:40%;
-    margin-top:-50px;
-    
+    margin-top:-50px;    
 }
 .foreground{
     width: 792px;
@@ -43,9 +42,7 @@
 p,h1,h2,h3,h4,h5,h6{
     color:#2b2b2b;
 }
-.banner
-{
-  
+.banner{
   margin: 0;
   padding: 0;
   height: 100%;
@@ -225,13 +222,8 @@ header {
   z-index: 1500 !important;
   animation-duration: .5s !important;
 }
-.click-me{
-  border-bottom: 4px solid rgba(255, 255, 255, 0);
-  transition: .5s;
-}
-.click-me:hover{
-  border-bottom: 4px solid rgba(255, 255, 255, 1);
-}
+
+
 /*about us*/
 .content-frame{
   overflow: hidden;
@@ -258,15 +250,15 @@ header {
     background-position: center;
     overflow: hidden;
 }
-.leaders-bg{
-    background: no-repeat url("../img/leaders.png");
+.core-value-bg{
+    background: no-repeat url("../img/core-value.png");
     background-size: 100% 100%;
     width: 100%;
     background-position: center;
     overflow: hidden;
 }
 .animated-filter{
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.3);
     position:absolute;
     height: 100%;
     width: 100%;
@@ -283,25 +275,25 @@ header {
 }
 .content-frame .history-bg:hover .animated-filter{
   transition: 0.2s ease-in-out;
-  
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .content-frame .history-bg:hover{
   transition: 0.3s ease-in-out;
   background-position: center;
   background-size: 110% 110%; 
 }
-.content-frame .leaders-bg:hover .animated-filter, h5{
+.content-frame .core-value-bg:hover .animated-filter{
   transition: 0.2s ease-in-out;
-  
+  background-color: rgba(0, 0, 0, 0.7);
 }
-.content-frame .leaders-bg:hover{
+.content-frame .core-value-bg:hover{
   transition: 0.3s ease-in-out;
   background-position: center;
   background-size: 110% 110%; 
 }
 .content-frame .certificates-bg:hover .animated-filter{
   transition: 0.2s ease-in-out;
-  
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .content-frame .certificates-bg:hover{
   transition: 0.3s ease-in-out;
@@ -310,7 +302,7 @@ header {
 }
 .content-frame .awards-bg:hover .animated-filter{
   transition: 0.2s ease-in-out;
-  
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .content-frame .awards-bg:hover{
   transition: 0.3s ease-in-out;
@@ -793,4 +785,13 @@ ul li.award-list2 , ul li.award-list1 , ul li.award-list3{
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden
+}
+
+/**menu**/
+div.flex-center.red:hover .fa.fa-superpowers{
+  font-size: .7em;
+  
+}
+ .fa.fa-superpowers{
+  transition: 70ms ease-in-out;
 }
